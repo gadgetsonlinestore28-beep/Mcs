@@ -97,7 +97,7 @@ async function smsAbsent(d,list){const c=smsCfg();if(!c.on||!list.length)return;
 function smsSet(){
   const c=smsCfg();
   $("mn").innerHTML=`<div class="card"><button class="btn" id="bk2">← অ্যাডমিন প্যানেল</button><h3 style="margin-top:12px">📩 SMS Settings</h3>
-  <span class="m">API URL (sms-gate.app)</span><input id="su" value="${esc(c.url||"https://api.sms-gate.app/3rdparty/v1/messages")}">
+  <span class="m">API URL (sms-gate.app)</span><input id="su" value="${esc(c.url||https://আপনার-প্রজেক্ট.supabase.co/functions/v1/send-sms")}">
   <span class="m">Username (sms-gate অ্যাপ থেকে পাওয়া; খালি রাখলে API Key-কে Bearer টোকেন ধরা হবে)</span><input id="sn" value="${esc(c.user||"")}">
   <span class="m">API Key / Password</span><input id="sk" type="password" value="${esc(c.key||"")}">
   <span class="m">SMS টেমপ্লেট ({name} = ছাত্রের নাম, {date} = তারিখ)</span><input id="st" value="${esc(c.tpl||DEFTPL)}">
